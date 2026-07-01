@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(197, 192, 192)
+    
+}
+
+.container{
+    background-color: white;
+    margin-top: 2rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    border-radius: 6%;
+    border-color: 1px solid white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2px;
+    h1{
+        color: blue;
+    }
+    h2{
+        color: gray;
+    }
+
+    
+        
+    
+
+    
+
+    
+    
+    
+
+}
