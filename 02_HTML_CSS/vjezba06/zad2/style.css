@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(202, 201, 199);
+}
+
+.main{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+    margin: auto;
+}
