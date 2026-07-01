@@ -1,0 +1,29 @@
+body{
+    background-color: azure;
+}
+
+.container{
+
+    margin: auto;
+    width: 90%;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(211, 208, 208);
+    padding: 1rem;
+    text-align: left;
+    background-color: white;
+}
+
+.header{
+    text-decoration: underline blue);
+    
+
+}
+
+.button{
+    background-color: green;
+    prime color: white;
+}
+h1{
+    padding-left: 1rem;
+}
