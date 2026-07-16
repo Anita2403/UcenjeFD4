@@ -50,7 +50,10 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '4') {
         // Početak 4. zadatka
         // 4. Modulo operator: Ostatak pri dijeljenju A s B (A % B)
+        const aBroj = Number(a)
+        const bBroj = Number(b)
 
+        rezultat = aBroj % bBroj
 
         // Kraj 4. zadatka
 
@@ -60,6 +63,7 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 5. zadatka
         // 5. Stroga jednakost: Jesu li A i B identični po vrijednosti i tipu (A === B)?
 
+        rezultat = a === b
 
         // Kraj 5. zadatka
 
@@ -68,7 +72,12 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '6') {
         // Početak 6. zadatka
         // 6. Relacijski operatori: Je li zbroj A i B veći od umnoška C i D?
+        const aBroj = Number(a)
+        const bBroj = Number(b)
+        const cBroj = Number(c)
+        const dBroj = Number(d)
 
+        rezultat = (aBroj + bBroj) > (cBroj * dBroj)
 
         // Kraj 6. zadatka
 
@@ -77,7 +86,10 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '7') {
         // Početak 7. zadatka
         // 7. Logički AND (&&): Je li A pozitivno I istovremeno B parno?
+        const aBroj = Number(a)
+        const bBroj = Number(b)
 
+        rezultat = (aBroj > 0) && (bBroj % 2 === 0)
 
         // Kraj 7. zadatka
 
@@ -87,6 +99,7 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 8. zadatka
         // 8. Logički OR (||): Je li barem jedno od polja C ili D prazan string?
 
+        rezultat = c === '' || d === ''
 
         // Kraj 8. zadatka
 
@@ -96,6 +109,12 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 9. zadatka
         // 9. Operator typeof: Ispiši tip podatka za izraz (A * B)
 
+        const aBroj = Number(a)
+        const bBroj = Number(b)
+
+        const rez1 = aBroj * bBroj
+        rezultat = typeof rez1
+
 
         // Kraj 9. zadatka
 
@@ -104,6 +123,11 @@ document.getElementById('btnRun').addEventListener('click', () => {
     if (task === '10') {
         // Početak 10. zadatka
         // 10. Ternarni operator: Ako je A > B ispiši vrijednost C, inače ispiši D
+        const aBroj = Number(a)
+        const bBroj = Number(b)
+        
+      rezultat = aBroj > bBroj ? c : d
+
 
 
         // Kraj 10. zadatka
