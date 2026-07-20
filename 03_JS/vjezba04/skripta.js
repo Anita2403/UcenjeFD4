@@ -125,8 +125,8 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // 10. Ternarni operator: Ako je A > B ispiši vrijednost C, inače ispiši D
         const aBroj = Number(a)
         const bBroj = Number(b)
-        
-      rezultat = aBroj > bBroj ? c : d
+
+        rezultat = aBroj > bBroj ? c : d
 
 
 
@@ -137,74 +137,81 @@ document.getElementById('btnRun').addEventListener('click', () => {
         // Početak 11. zadatka
         // 11. Inkrement / Dekrement: Izračunaj trik izraz (A++ - --B)
 
+        const aBroj = Number(a)
+        const bBroj = Number(b)
+        a = 
+        b = 
+
+        rezultat = (aBroja++) - (bBroj--b)
+
 
         // Kraj 11. zadatka
     }
 
-    if (task === '12') {
-        // Početak 12. zadatka
-        // 12. Različito (!= vs !==): Usporedi A i B po vrijednosti (!=) i po tipu (!==)
+if (task === '12') {
+    // Početak 12. zadatka
+    // 12. Različito (!= vs !==): Usporedi A i B po vrijednosti (!=) i po tipu (!==)
 
 
-        // Kraj 12. zadatka
-    }
+    // Kraj 12. zadatka
+}
 
-    if (task === '13') {
-        // Početak 13. zadatka
-        // 13. Nullish Coalescing (??): Ako je A prazan string, koristi default vrijednost iz B
-
-
-        // Kraj 13. zadatka
-    }
-
-    if (task === '14') {
-        // Početak 14. zadatka
-        // 14. Array i Spread operator (...): Spoji [A, B] i [C, D] u jedan novi niz
+if (task === '13') {
+    // Početak 13. zadatka
+    // 13. Nullish Coalescing (??): Ako je A prazan string, koristi default vrijednost iz B
 
 
-        // Kraj 14. zadatka
-    }
+    // Kraj 13. zadatka
+}
 
-    if (task === '15') {
-        // Početak 15. zadatka
-        // 15. Destrukturiranje niza: Iz niza [A, B, C, D] izvuci prva dva elementa u zasebne varijable i ispiši ih u konzolu
-
-
-        // Kraj 15. zadatka
-    }
-
-    if (task === '16') {
-        // Početak 16. zadatka
-        // 16. Rad s objektima: Kreiraj JSON objekt { ime: A, grad: B } i ispiši ga u konzolu
+if (task === '14') {
+    // Početak 14. zadatka
+    // 14. Array i Spread operator (...): Spoji [A, B] i [C, D] u jedan novi niz
 
 
-        // Kraj 16. zadatka
-    }
+    // Kraj 14. zadatka
+}
 
-    if (task === '17') {
-        // Početak 17. zadatka
-        // 17. Optional Chaining (?.): Sigurno pročitaj svojstvo iz ugniježđenog objekta
-
-
-        // Kraj 17. zadatka
-    }
-
-    if (task === '18') {
-        // Početak 18. zadatka
-        // 18. Logički NOT (!): Obrni logičku vrijednost provjere (je li A veće od B)
+if (task === '15') {
+    // Početak 15. zadatka
+    // 15. Destrukturiranje niza: Iz niza [A, B, C, D] izvuci prva dva elementa u zasebne varijable i ispiši ih u konzolu
 
 
-        // Kraj 18. zadatka
-    }
+    // Kraj 15. zadatka
+}
+
+if (task === '16') {
+    // Početak 16. zadatka
+    // 16. Rad s objektima: Kreiraj JSON objekt { ime: A, grad: B } i ispiši ga u konzolu
 
 
+    // Kraj 16. zadatka
+}
 
+if (task === '17') {
+    // Početak 17. zadatka
+    // 17. Optional Chaining (?.): Sigurno pročitaj svojstvo iz ugniježđenog objekta
+
+
+    // Kraj 17. zadatka
+}
+
+if (task === '18') {
+    // Početak 18. zadatka
+    // 18. Logički NOT (!): Obrni logičku vrijednost provjere (je li A veće od B)
+
+
+    // Kraj 18. zadatka
+}
 
 
 
 
-    // Prikaz rezultata na ekranu
-    const display = document.getElementById('display')
 
-    display.innerText = rezultat
+
+
+// Prikaz rezultata na ekranu
+const display = document.getElementById('display')
+
+display.innerText = rezultat
 })
