@@ -1,4 +1,89 @@
+const rez = document.getElementById('rezultat')
 
+document.getElementById('izvedi').addEventListener('click', () => {
+    //početak funkcije koja se izvodi na klik izvedi
+    rez.innerHTML = ''
+    const aString = document.getElementById('aInput').value
+
+    const zad = Number(document.getElementById('zadatak').value)
+    switch (zad) {
+        case 1:
+            //počinje 1. zadatak
+            if (!aString.trim()) {
+                rez.innerHTML = 'Obavezan unos'
+                rez.style.color = 'red'
+                return
+            }
+
+            switch (aString.trim().toLowerCase()) {
+                case 'start':
+                    rez.innerHTML = 'Pokretanje programa'
+                    rez.style.color = 'green'
+                    break
+                case 'stop':
+                    rez - innerHTML='<span stayle="color: #f0f">Zaustavljenje programa/<span>'
+                    break
+
+                case 'pauza':
+                    rez.innerHTML = `
+                    <span style="color: yellow>
+                    Pauziranje programa
+                    </span>
+                    `
+                    break
+                    defoult:
+                    rez.innerHTML = 'Nije komanda'
+                    rez.style.color = 'red'
+            }
+
+            //završava 1. zadatak
+            break
+        case 2:
+            //počinje 2. zadatak
+            if (!aString.trim()) {
+                rez.innerHTML = 'Obavezan unos'
+                rez.style.color = 'red'
+                return
+            }
+
+            if (aString.trim.lenght > 1) {
+                rez.innerHTML = 'Obavezno jedno slovo'
+                rez.style.color = 'red'
+                return
+            }
+            const b = Number(aString.trim())
+
+            if (b || b === 0) {
+                rez.innerHTML = 'Ne broj, nego slovo'
+                rez.style.color = 'red'
+                return
+            }
+
+            switch (aString.trim(), toLowerCase()) {
+                case 'a':
+                case 'b':
+                case 'c':
+                    rez.innerHTML = 'Položio'
+                    rez.style.color = 'green'
+                    break
+                case 'd':
+                case 'f':
+                    rez.innerHTML = 'Nije položio'
+                    rez.style.color = 'rust'
+                    break
+                default:
+                    rez.innerHTML = 'Dozvoljen A, B, C, D ili F'
+                    rez.style.color = 'red'
+
+            }
+
+            //završava 2. zadatak
+            break
+    }
+
+
+    //kraj fonkcije koja izvodi na klik izvedi
+})
 
 // Zadaci
 
