@@ -21,7 +21,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
                     rez.style.color = 'green'
                     break
                 case 'stop':
-                    rez.innerHTML='<span stayle="color: #f0f";>Zaustavljenje programa</span>'
+                    rez.innerHTML='<span style="color: #f0f";>Zaustavljenje programa</span>'
                     break
 
                 case 'pauza':
