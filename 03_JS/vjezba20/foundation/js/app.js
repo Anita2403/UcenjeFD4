@@ -1,0 +1,13 @@
+$(document).foundation()
+
+$('#promijeniNaslov').click(function(){
+    $('#naslov').text('Dobrodošli')
+    return false
+})
+
+$('#naslov').dblclick(function(){
+    $('.callout.primary').css('background-color','gray')
+    $('p').css('color','red')
+})
+
+
