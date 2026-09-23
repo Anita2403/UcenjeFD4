@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Izbornik() {
 
-
     const navigate = useNavigate()
+
 
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
@@ -23,7 +23,7 @@ export default function Izbornik() {
                         onClick={()=>{navigate(RouteNames.HOME)}}
                         >Početna</Nav.Link>
                         <NavDropdown title="Programi" id="basic-nav-dropdown">
-                            <NavDropdown.Item 
+                            <NavDropdown.Item
                             onClick={()=>navigate(RouteNames.SMJEROVI)}
                             >Smjerovi</NavDropdown.Item>
                         </NavDropdown>
