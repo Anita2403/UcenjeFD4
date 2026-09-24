@@ -1,10 +1,10 @@
-import { data } from "react-router-dom";
 import { smjerovi } from "./SmjerPodaci";
 
-async function  get(){
-    return {data: [...smjerovi]}
-}
+// 1/4 od CRUD: Read
 
+async function get(){
+    return {data: [...smjerovi]} // [...] stvara novi niz s istim podacima
+}
 
 
 
