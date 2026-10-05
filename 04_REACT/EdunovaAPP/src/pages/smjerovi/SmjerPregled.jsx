@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react"
 import SmjerService from "../../services/smjerovi/SmjerService"
-import { Badge, Table } from "react-bootstrap"
+import { Badge, Button, Table } from "react-bootstrap"
 import { GrValidate } from "react-icons/gr"
 import { FcApproval, FcDisapprove } from "react-icons/fc"
 import { NumericFormat } from "react-number-format"
 import FormatDatuma from "../../components/FormatDatuma"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { RouteNames } from "../../constants"
 
 
 export default function SmjerPregled() {
 
     const [smjerovi, setSmjerovi] = useState([])
+
+    const navigate = useNavigate()
 
     async function ucitajSmjerove() {
         await SmjerService.get().then((odgovor) => {
@@ -21,7 +23,7 @@ export default function SmjerPregled() {
     }
 
     useEffect(() => {
-        console.log('Došao na pregled smjerova')
+        //console.log('Došao na pregled smjerova')
         ucitajSmjerove()
     }, [])
 
@@ -29,11 +31,10 @@ export default function SmjerPregled() {
 
     return (
         <>
-
-            <Link to={RouteNames.SMJEROVI_DODAJ}>
-            Dodavanje novog smjera
+            <Link to={RouteNames.SMJEROVI_DODAJ}
+            className="btn btn-success w-100 my-3">
+                Dodavanje novog smjera
             </Link>
-
             <Table hover striped bordered>
                 <thead>
                     <tr>
@@ -42,6 +43,7 @@ export default function SmjerPregled() {
                         <th>Cijena</th>
                         <th>Datum pokretanja</th>
                         <th>Aktivan</th>
+                        <th>Akcija</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -87,6 +89,11 @@ export default function SmjerPregled() {
                                 )}
 
 
+                            </td>
+                            <td>
+                                <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
+                                    Promjena
+                                </Button>
                             </td>
                         </tr>
                     ))}
