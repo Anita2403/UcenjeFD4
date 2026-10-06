@@ -5,7 +5,7 @@ import { GrValidate } from "react-icons/gr"
 import { FcApproval, FcDisapprove } from "react-icons/fc"
 import { NumericFormat } from "react-number-format"
 import FormatDatuma from "../../components/FormatDatuma"
-import { Link, useNavigate } from "react-router-dom"
+import { Await, Link, useNavigate } from "react-router-dom"
 import { RouteNames } from "../../constants"
 
 
@@ -26,6 +26,16 @@ export default function SmjerPregled() {
         //console.log('Došao na pregled smjerova')
         ucitajSmjerove()
     }, [])
+
+    async function obrisi(sifra){
+
+        if(!confirm('Sigurno obrisati?')){
+            return
+        }
+
+        await SmjerService.obrisi(sifra)
+        ucitajSmjerove()
+    }
 
     
 
@@ -94,6 +104,11 @@ export default function SmjerPregled() {
                                 <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
                                     Promjena
                                 </Button>
+                                &nbsp;&nbsp;
+                                <Button variant="danger" onClick={()=>obrisi(smjer.sifra)}>
+                                    Obriši
+                                </Button>
+                
                             </td>
                         </tr>
                     ))}
