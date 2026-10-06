@@ -21,14 +21,17 @@ async function dodaj(smjer){
     smjerovi.push(smjer)
 }
 
+// 3/4 od CRUD: Update
+
 async function promijeni(sifra, smjer){
-const index = nadiIndex(sifra)
-smjerovi[index] = {...smjerovi[index], ...smjer}
+    const index = nadiIndex(sifra)
+    smjerovi[index] = {...smjerovi[index], ...smjer}
 }
 
 function nadiIndex(sifra){
     return smjerovi.findIndex(s => s.sifra === parseInt(sifra))
-}
+} 
+
 
 
 export default{

@@ -26,7 +26,7 @@ export default function SmjerPromjena() {
     },[])
 
     async function promijeni(smjer){
-        await SmjerService.promijeni(params.sifra,smjer).then(()=>{
+        await SmjerService.promijeni(params.sifra, smjer).then(()=>{
             navigate(RouteNames.SMJEROVI)
         })
     }
